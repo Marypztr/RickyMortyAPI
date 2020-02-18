@@ -1,0 +1,22 @@
+.ContainerHome{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+.ContainerHome h1{
+    Color:rgb(69, 170, 165);
+}
+.ContainerHome img{
+    width:100%
+}
+
+.containerTop img{
+    width:400px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin:20px
+}

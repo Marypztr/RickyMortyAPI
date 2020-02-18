@@ -1,0 +1,46 @@
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.formContainer h1{
+    color:rgb(58, 51, 150);
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin:10px;
+}
+
+form > div >label{
+    text-align: right;
+    color:#9e9ee9;
+    font-weight: bold;
+}
+
+input{
+    width:200px;
+    border:2px solid rgb(186, 199, 199);
+    border-radius: 10px;
+    padding:5%;
+}
+
+.formContainer >form > button{
+    width:220px;
+    border:1px solid rgb(108, 199, 202);
+    background-color:rgb(126, 219, 223); ;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding:5%;
+    margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+.ContainerEpisode{
+    gap:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:3%;
+}
+
+.titleEpisodes{
+    font-weight: normal;
+    color: #E35055;
+    font-size: 40px;
+}
+
+.ContainerEpisode > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(168,186,189,1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(168,186,189,1);
+    box-shadow: 1px 1px 4px 0px rgba(168,186,189,1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ContainerEpisode :nth-last-child(2){
+    color:rgb(231, 163, 178);
+    font-weight: normal;
+    font-size: small;
+}
+
+.ContainerEpisode button{
+    cursor: pointer;
+}
+
+.ContainerEpisode > div > button{
+    width: 100px;
+    border:none;
+    border-radius: 20px;
+    color:rgb(120, 221, 216);
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px;
+}

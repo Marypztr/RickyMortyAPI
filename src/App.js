@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { AppContextProvider, AppContext } from "./AppContext"
+import Routes from "./Routes"
+import Navbar from "./Components/Navbar"
+import Characters from "./Components/Characters";
+import Episodes from "./Components/Episodes";
+import Register from "./Components/Register"
+
+Register.contextType = AppContext;
+Characters.contextType = AppContext;
+Episodes.contextType = AppContext;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContextProvider>
+      <div className="App">
+          <Navbar/>
+          <Routes/>
+      </div>
+    </AppContextProvider>
   );
 }
 
