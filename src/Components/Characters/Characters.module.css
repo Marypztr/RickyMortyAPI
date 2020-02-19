@@ -48,3 +48,25 @@
     color:#2B425B;
     margin:5px;
 }
+
+.cardDetail{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.cardDetail > section{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction:row;
+    
+}
+
+.cardDetail img{
+    width:50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}

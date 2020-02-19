@@ -43,3 +43,17 @@
     background-color: transparent;
     padding: 10px;
 }
+
+.cardDetail{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+}
+
+.cardDetail > section{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-direction:column;
+    
+}

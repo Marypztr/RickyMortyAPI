@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { Username } from "../../AppContext"
 import styles from "./Navbar.module.css"
-
 
 
 export default class Navbar extends Component {
@@ -10,7 +9,7 @@ export default class Navbar extends Component {
     render() {
         return(
              <div>
-                <header>
+                <header >
                     <Link to="/">
                         <img id="logo" src="https://www.stickpng.com/assets/images/58f37720a4fa116215a9240f.png"/>
                     </Link>
@@ -22,7 +21,7 @@ export default class Navbar extends Component {
                             <span>Episodes</span>
                         </Link>
                         <Link to="/register">
->
+
                            <span>{
                           this.context  ?
                             this.context : "Sign Up"
